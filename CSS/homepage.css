@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto:wght@100;300;400;500&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: black;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Mobile first*/
+
+.header {
+  padding: 1rem;
+  background-color: #ca0813;
+  width: 100%;
+}
+.header-container {
+  display: block;
+  padding: 1rem;
+}
+.navigation {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.search-image {
+  width: 40%;
+  cursor: pointer;
+}
+
+/* menu icon */
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 0.5rem;
+  width: 3rem;
+  background: white;
+  position: absolute;
+  display: block;
+  content: "";
+}
+#nav-toggle span:before {
+  top: -1rem;
+}
+#nav-toggle span:after {
+  bottom: -1rem;
+}
+.navbar-button {
+  display: inline;
+  margin: 1rem;
+}
+.search {
+  display: inline;
+  position: relative;
+}
+
+/* positioning navbar */
+.navbar {
+  position: absolute;
+  z-index: +999;
+  top: 4.8rem;
+  left: 0.6rem;
+  background-color: #f9f9f9;
+}
+
+/* Styling links in navbar */
+
+.navbar a {
+  box-sizing: content-box;
+  text-align: left;
+  color: #ca0813;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ca0813;
+  color: #f9f9f9;
+}
+
+/* dropdown-content positioning */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  background-color: #f9f9f9;
+  position: absolute;
+  z-index: +5;
+  top: -3.4rem;
+  left: 14.39rem;
+}
+.dropdown-content a {
+  box-sizing: content-box;
+  text-decoration: none;
+  color: #ca0813;
+  font-size: 1.4rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  padding: 0.3rem 2rem 0.3rem 0.3rem;
+  transition: background-color 0.3s ease;
+}
+.dropdown-content-one {
+  top: 0;
+}
+
+/* for JavaScript to show or hide on click */
+.hidden {
+  display: none;
+}
+
+/* Positioning searc-input */
+.search-input {
+  position: absolute;
+  z-index: +5;
+  /*background-color: #f9f9f9;*/
+  top: 5rem;
+  left: -17rem;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.search-input input {
+  padding: 0.5rem;
+}
+
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url(../images/search-2.png) no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+/* Adding style sto main containers */
+
+.main-video {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  min-height: 85vh;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
+}
+.image-center {
+  width: 80%;
+}
+.main-content {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.main-link {
+  width: 50.6rem;
+  padding: 8rem;
+  text-align: center;
+  transition: 0, 3s ease;
+}
+
+.links {
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  transition: all 0, 3s ease;
+}
+
+.boxing {
+  background-image: url(../images/muhamed\ Ali.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fina {
+  background-image: url(../images/fina.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.football {
+  background-image: url(../images/films-futball.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.x-games {
+  background-image: url(../images/skate.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.athletic-olimpics {
+  background-image: url(../images/athletic\ olimpics.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ncaa {
+  background-image: url(../images/ncaa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-link:hover,
+.main-link:hover a {
+  background-image: none;
+  color: #ca0813;
+}
+.footer {
+  padding: 3rem;
+  background-color: #ca0813;
+  color: #f9f9f9;
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.footer a {
+  color: lightblue;
+}
+
+/* Adjusting for larger screens */
+
+@media (min-width: 600px) {
+  .main-link {
+    width: 50%;
+    padding: 8rem;
+    text-align: center;
+    transition: 0, 3s ease;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 80%;
+  }
+  .header {
+    padding: 0;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+  .logo-image {
+    width: 35%;
+  }
+  .navbar-button {
+    display: none;
+  }
+  .navbar {
+    font-size: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: unset;
+    width: fit-content;
+    width: 40rem;
+    background-color: inherit;
+  }
+  .content-calendar {
+    margin-top: -0.3rem;
+  }
+  .navbar a,
+  .dropdown a {
+    font-size: inherit;
+    margin-bottom: 0;
+    color: #f9f9f9;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .navbar a:hover {
+    background-color: #f9f9f9;
+    color: #ca0813;
+  }
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 14.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: +999;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: gray;
+    color: black;
+  }
+
+  /* Styling search-input */
+  .search-input {
+    padding: 2rem;
+    width: 30rem;
+    position: absolute;
+    z-index: +999;
+    background-color: #f9f9f9;
+    top: 3rem;
+    left: -30rem;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .search-input input {
+    color: #ca0813;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+    background-color: #f9f9f9;
+  }
+  .footer {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .main-link {
+    width: 33.3%;
+    padding: 8rem;
+    text-align: center;
+    transition: 0, 3s ease;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-content {
+    top: 3.25rem;
+    left: 0;
+    width: 18rem;
+  }
+  .search-input {
+    top: 3.25rem;
+    left: -30rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer {
+    padding: 2rem;
+  }
+}
